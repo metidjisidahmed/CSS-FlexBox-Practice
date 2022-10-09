@@ -1,0 +1,29 @@
+.child{
+    height: 200px;
+    width: 200px;
+
+}
+
+.child:nth-child(2n){
+    background-color: green;
+}
+
+.child:nth-child(2n+1){
+    background-color: red;
+}
+
+
+#grand-parent , .parent{
+    display: flex;
+}
+
+.parent{
+    margin : 20px 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#grand-parent{
+    flex-direction: column;
+
+}

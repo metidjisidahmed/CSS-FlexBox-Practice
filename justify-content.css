@@ -1,0 +1,26 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    /*flex-direction: column;*/
+    margin : 40px 0;
+}
+
+.parent:not(#parent2){
+    flex-wrap: wrap;
+
+}
+
+
+.child{
+    margin: 0 10px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.child:nth-child(2n){
+    background-color: red;
+}
+.child:nth-child(2n+1){
+    background-color: green;
+}

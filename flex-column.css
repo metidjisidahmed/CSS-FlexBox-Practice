@@ -1,0 +1,21 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+
+}
+
+.child{
+    height: 100px;
+    width: 100px;
+    margin: 0px 10px;
+}
+
+.child:nth-child(2n){
+    background-color: green;
+}
+
+.child:nth-child(2n+1){
+    background-color: red;
+}

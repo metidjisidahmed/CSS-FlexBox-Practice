@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .parent{
+            display: flex;
+        }
+        .child{
+            height: 200px;
+            /*width: 200px;*/
+        }
+
+        #child_10{
+            width: 50%;
+        }
+        #child_30 {
+            width: 30%;
+        }
+        #child_60 {
+            width: 60%;
+        }
+        /*#child_10{*/
+        /*    */
+        /*}*/
+        .child:nth-child(2n){
+            background-color : green;
+        }
+        .child:nth-child(2n+1){
+            background-color : red
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="child_30"></div>
+        <div class="child" id="child_60"></div>
+        <div class="child" id="child_10"></div>
+
+    </div>
+</body>
+</html>
